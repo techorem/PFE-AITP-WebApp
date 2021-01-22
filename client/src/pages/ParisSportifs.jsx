@@ -11,31 +11,28 @@ const Title = styled.h1`
 `
 
 const Wrapper = styled.div.attrs({
-    class : "container-fluid",
+    class : "form-group-row",
 })`
     margin: 90px 90px 90px 90px;
     background: white;
 `
 
-const Details = styled.div.attrs({
-})`
+const Details = styled.div`
+    class: col;
     text-align: center;
     border: 2px solid grey;
     background: #243773;
     color: white;
-    class: w-25;
 `
 
 
-const List = styled.div.attrs({
-    className: 'form-group',
-})`
+const List = styled.div`
+    class: col;
     margin: 20px 20px 20px 20px;
     text-align: center;
     border: 2px solid grey;
     background: #243773;
     color: white;
-    class: w-75;
 `
 
 
@@ -68,13 +65,13 @@ class ParisSportifs extends Component {
 
         this.state = {
             Date: '',
-            SurfLoc: '',
+            Surface: '',
             Tournoi: '',
         }
     }
 
     render() {
-        const { Date, SurfLoc, Tournoi } = this.state
+        const { Date, Surface, Tournoi } = this.state
         return (
             <Wrapper>
                 <Details>
@@ -88,7 +85,7 @@ class ParisSportifs extends Component {
                     <Label>Surface</Label>
                     <InputSelect
                         type="text"
-                        value={SurfLoc}
+                        value={Surface}
                     />
 
                     <Label> Tournoi</Label>

@@ -1,19 +1,34 @@
 import React, { Component } from 'react'
-import api from '../api'
 
 import styled from 'styled-components'
-import ReactPlayer from "react-player";
-import ReactTable from "react-table";
 
 const Title = styled.h1.attrs({
     className: 'h1',
-})``
+})`
+    text-align: center;
+`
 
 const Wrapper = styled.div.attrs({
     className: 'form-group',
 
 })`
+    margin: 90px 90px 90px 90px;
+`
+
+const Selection = styled.div.attrs({
+    className: 'form-row',
+})`
     margin: 0 30px;
+`
+const Details = styled.div.attrs({
+    className: 'form-group',
+
+})`
+    margin: 30px 30px 30px 30px;
+    text-align: center;
+    background: #243773;
+    color: white;
+    font-size: 1.5em;
 `
 
 const Label = styled.label`
@@ -26,6 +41,12 @@ const InputText = styled.input.attrs({
     margin: 20px;
 `
 
+const InputSelect = styled.div.attrs({
+    className: 'form-group col',
+})`
+    margin: 5px 30px 30px 30px;
+`
+
 
 class SimuMatch extends Component {
     constructor(props) {
@@ -33,49 +54,27 @@ class SimuMatch extends Component {
 
         this.state = {
             Date: '',
-            SurfLoc: '',
+            Surface: '',
             Tournoi: '',
         }
-    }
-
-    handleChangeInputName = async event => {
-        const name = event.target.value
-        this.setState({ name })
-    }
-
-    handleChangeInputRating = async event => {
-        const rating = event.target.validity.valid
-            ? event.target.value
-            : this.state.rating
-
-        this.setState({ rating })
-    }
-
-    handleChangeInputTime = async event => {
-        const time = event.target.value
-        this.setState({ time })
-    }
-
-    handleIncludeMovie = async () => {
-        const { name, rating, time } = this.state
-        const arrayTime = time.split('/')
-        const payload = { name, rating, time: arrayTime }
-
-        await api.insertMovie(payload).then(res => {
-            window.alert(`Movie inserted successfully`)
-            this.setState({
-                Date: '',
-                SurfLoc: '',
-                Tournoi: '',
-            })
-        })
     }
 
     render() {
         const { Date, SurfLoc, Tournoi } = this.state
         return (
             <Wrapper>
-                <Wrapper>
+                <form>
+                    <Selection>
+                        <InputSelect>
+                            <input type="email" className="form-control" placeholder="Joueur 1"/>
+                        </InputSelect>
+                        <Title> VS </Title>
+                        <InputSelect>
+                            <input type="email" className="form-control" placeholder="Joueur 2"/>
+                        </InputSelect>
+                    </Selection>
+                </form>
+                <Details>
 
                     <Label>Date : </Label>
                     <InputText
@@ -95,7 +94,8 @@ class SimuMatch extends Component {
                         type="select"
                         value={Tournoi}
                     />
-                </Wrapper>
+                </Details>
+
             </Wrapper>
         )
     }
