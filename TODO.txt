@@ -1,0 +1,11 @@
+TODO : Faire Le front-end de la page ParisSportifs
+TODO : Faire Le front-end de la page Recap
+TODO : Faire Le front-end de la page Simumatch
+TODO : Faire Le front-end de la page Détails des joueurs
+TODO : Faire Le front-end de la page InfoMatch
+
+TODO : Affiner les modèles au max des matchs et joueurs
+TODO : Créer les routes du server
+TODO : Intégrer la base de données de joeurs et matchs
+TODO : faire les contolleurs de la base de données afin de la relier au client
+TODO :
