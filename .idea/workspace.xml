@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eeb7d03-6466-4723-9c76-7c8bbf2a5ec3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TODO.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/match-ctrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/player-ctrl.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/match-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/match-model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/player-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/player-model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/movie-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/movie-router.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +38,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/controllers" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lilian.D\Desktop\PFE-AITP-WebApp\server\controllers" />
       <recent name="C:\Users\Lilian.D\Desktop\movies-app-master\client\src\pages" />
       <recent name="C:\Users\Lilian.D\Desktop\movies-app-master\server\models" />
     </key>
@@ -62,7 +67,8 @@
       <workItem from="1611101890779" duration="1206000" />
       <workItem from="1611104169320" duration="14345000" />
       <workItem from="1611272850503" duration="6722000" />
-      <workItem from="1611589538720" duration="5069000" />
+      <workItem from="1611589538720" duration="8708000" />
+      <workItem from="1611673552521" duration="7715000" />
     </task>
     <servers />
   </component>
