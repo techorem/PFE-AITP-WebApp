@@ -2,11 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eeb7d03-6466-4723-9c76-7c8bbf2a5ec3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/controllers/match-ctrl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/controllers/player-ctrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/js/jquery-3.5.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/src/gm-date-selector.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/src/gm-date-selector.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/match-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/match-model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/player-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/player-model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/ParisSportifs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/ParisSportifs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/SimuMatch.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/SimuMatch.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/routes/movie-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/movie-router.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +86,7 @@
       <workItem from="1611104169320" duration="14345000" />
       <workItem from="1611272850503" duration="6722000" />
       <workItem from="1611589538720" duration="8708000" />
-      <workItem from="1611673552521" duration="7715000" />
+      <workItem from="1611673552521" duration="25009000" />
     </task>
     <servers />
   </component>

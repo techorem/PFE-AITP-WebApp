@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import api from '../api'
 
 import styled from 'styled-components'
+import ReactTable from "react-table";
 
 const Title = styled.h1`
     display : block;
@@ -11,7 +12,7 @@ const Title = styled.h1`
 `
 
 const Wrapper = styled.div.attrs({
-    class : "form-group-row",
+    class : "form-group",
 })`
     margin: 90px 90px 90px 90px;
     background: white;
@@ -25,14 +26,18 @@ const Details = styled.div`
     color: white;
 `
 
+const SelectionRow = styled.div.attrs({
+    className: 'form-row',
+})`
+    margin: 0 30px;
+    text-align: center;
+`
 
 const List = styled.div`
     class: col;
-    margin: 20px 20px 20px 20px;
+    margin: 0px 0px 0px 100px;
     text-align: center;
     border: 2px solid grey;
-    background: #243773;
-    color: white;
 `
 
 
@@ -58,45 +63,174 @@ const Button = styled.button.attrs({
     margin: 15px 15px 15px 5px;
 `
 
+const InfoButton = styled.a.attrs({
+    className: `btn btn-outline-success`,
+})`
+    margin: 15px 15px 15px 5px;
+    color: green;
+`
+
+class LaunchResearch extends Component {
+    launchResearch = event => {
+        event.preventDefault()
+
+        window.location.href = `/`
+    }
+
+    render() {
+        return <Button onClick={this.launchResearch}>Lancer les pronostics</Button>
+    }
+}
+
+class GetInformation extends Component {
+    getInformation = event => {
+        event.preventDefault()
+
+        window.location.href = `/`
+    }
+
+    render() {
+        return <Button onClick={this.getInformation}>Ajouter</Button>
+    }
+}
+
 
 class ParisSportifs extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-            Date: '',
-            Surface: '',
-            Tournoi: '',
+            movies: [],
+            columns: [],
+            isLoading: false,
         }
     }
 
+    componentDidMount = async () => {
+        this.setState({ isLoading: true })
+
+        await api.getAllMovies().then(movies => {
+            this.setState({
+                movies: movies.data.data,
+                isLoading: false,
+            })
+        })
+    }
+
+
+
     render() {
         const { Date, Surface, Tournoi } = this.state
+        const { movies, isLoading } = this.state
+
+        const columns = [
+            {
+                Header: 'Date & Tournoi',
+                accessor: '_id',
+                filterable: true,
+            },
+            {
+                Header: 'Mise',
+                accessor: 'name',
+                Cell: function(props) {
+                    return (
+                        <span>
+                                <InputSelect/>
+                                <InputText/>
+                                <GetInformation/>
+                                <InfoButton href ="/" > infos </InfoButton>
+                            </span>
+                    )
+                },
+            },
+            {
+                Header: 'Joueur 1',
+                accessor: 'rating',
+                filterable: true,
+            },
+            {
+                Header: 'Cote joueur 1',
+                accessor: 'time',
+                Cell: props => <span>{props.value.join(' / ')}</span>,
+            },
+            {
+                Header: 'Joueur 2',
+                accessor: '',
+                Cell: function(props) {
+                    return (
+                        <span>
+                                <h5> TEST </h5>
+                            </span>
+                    )
+                },
+            },
+            {
+                Header: 'Cote joueur 2',
+                accessor: '',
+                Cell: function(props) {
+                    return (
+                        <span>
+                                <h5> TEST 2 </h5>
+                            </span>
+                    )
+                },
+            },
+            {
+                Header: 'Zone d expérimentation',
+                accessor: '',
+                Cell: function(props) {
+                    return (
+                        <span>
+                                <h5> TEST 2 </h5>
+                        </span>
+                    )
+                },
+            },
+        ]
+
+        let showTable = true
+        if (!movies.length) {
+            showTable = false
+        }
+
+
         return (
             <Wrapper>
-                <Details>
-                    <Title> Filtres </Title>
-                    <Label>Date</Label>
-                    <InputText
-                        type="text"
-                        value={Date}
-                    />
+                <SelectionRow>
+                    <Details>
+                        <Title> Filtres </Title>
+                        <Label>Date</Label>
+                        <InputText
+                            type="text"
+                            value={Date}
+                        />
 
-                    <Label>Surface</Label>
-                    <InputSelect
-                        type="text"
-                        value={Surface}
-                    />
+                        <Label>Surface</Label>
+                        <InputSelect
+                            type="text"
+                            value={Surface}
+                        />
 
-                    <Label> Tournoi</Label>
-                    <InputSelect
-                        type="select"
-                        value={Tournoi}
-                    />
-                    <Button href="/Recap"> Lancer les pronostics</Button>
-                </Details><List>
-                    écran d'affichage des matchs disponibles
-                </List>
+                        <Label> Tournoi</Label>
+                        <InputSelect
+                            type="select"
+                            value={Tournoi}
+                        />
+                        <LaunchResearch/>
+                    </Details>
+                    <List>
+                        {showTable && (
+                            <ReactTable
+                                data={movies}
+                                columns={columns}
+                                loading={isLoading}
+                                defaultPageSize={10}
+                                showPageSizeOptions={true}
+                                minRows={0}
+                            />
+                        )}
+                    </List>
+                </SelectionRow>
             </Wrapper>
         )
     }
