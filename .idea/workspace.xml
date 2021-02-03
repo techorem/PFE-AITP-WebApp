@@ -2,30 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1eeb7d03-6466-4723-9c76-7c8bbf2a5ec3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/bootstrap/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/assets/js/jquery-3.5.0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/src/gm-date-selector.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/date-selector-master/src/gm-date-selector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Lilian_D.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/Tennis.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/movies-app-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/movies-app-master.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/InfoMatch.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/InfoMatch.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/ParisSportifs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/ParisSportifs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Recap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Recap.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/SimuMatch.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/SimuMatch.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/movie-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/movie-router.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript extension" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -61,6 +49,9 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lilian.D\Desktop\PFE-AITP-WebApp\client\src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Lilian.D\Desktop\PFE-AITP-WebApp\server\controllers" />
       <recent name="C:\Users\Lilian.D\Desktop\movies-app-master\client\src\pages" />
@@ -86,7 +77,8 @@
       <workItem from="1611104169320" duration="14345000" />
       <workItem from="1611272850503" duration="6722000" />
       <workItem from="1611589538720" duration="8708000" />
-      <workItem from="1611673552521" duration="25009000" />
+      <workItem from="1611673552521" duration="53699000" />
+      <workItem from="1612309086123" duration="9880000" />
     </task>
     <servers />
   </component>
@@ -125,6 +117,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1610551207896" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1612311219347">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612311219347" />
     <state x="2019" y="-19" width="1730" height="1028" maximized="true" key="dock-window-1" timestamp="1611272932762">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -133,5 +129,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611275559815" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/pages/ParisSportifs.jsx</url>
+          <line>31</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/client/src/pages/MoviesInsert.jsx</url>
+          <line>34</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

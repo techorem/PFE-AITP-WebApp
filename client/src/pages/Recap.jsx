@@ -75,8 +75,6 @@ class Recap extends Component {
     render() {
         return (
             <Wrapper>
-                <h5> IDK </h5>
-                <h5> IDK </h5>
             </Wrapper>
         )
     }

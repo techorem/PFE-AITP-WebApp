@@ -138,7 +138,7 @@ class ParisSportifs extends Component {
                                 <InputSelect/>
                                 <InputText/>
                                 <GetInformation/>
-                                <InfoButton href ="/" > infos </InfoButton>
+                                <InfoButton href ="/Information-match" > infos </InfoButton>
                             </span>
                     )
                 },
@@ -172,17 +172,6 @@ class ParisSportifs extends Component {
                         <span>
                                 <h5> TEST 2 </h5>
                             </span>
-                    )
-                },
-            },
-            {
-                Header: 'Zone d expérimentation',
-                accessor: '',
-                Cell: function(props) {
-                    return (
-                        <span>
-                                <h5> TEST 2 </h5>
-                        </span>
                     )
                 },
             },
@@ -224,7 +213,7 @@ class ParisSportifs extends Component {
                                 data={movies}
                                 columns={columns}
                                 loading={isLoading}
-                                defaultPageSize={10}
+                                defaultPageSize={100}
                                 showPageSizeOptions={true}
                                 minRows={0}
                             />
