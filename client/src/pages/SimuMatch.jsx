@@ -92,7 +92,7 @@ function getChancesWinning(Joueur1, Joueur2, Date, Surface, Tournoi) {
         winner = Joueur1;
     else
         winner = Joueur2;
-    return "Selon notre algorythme, si un match se déroulait entre " + Joueur1 + " et " + Joueur2 + " avec les paramètres donnés, alors " + winner + " aura " + result + "% de chances de gagner selon notre modèle.";
+    return "Selon notre algorithme, si un match se déroulait entre " + Joueur1 + " et " + Joueur2 + " avec les paramètres donnés, alors " + winner + " aura " + result + "% de chances de gagner selon notre modèle.";
 }
 
 class SimuMatch extends Component {
